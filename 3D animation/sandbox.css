@@ -1,0 +1,57 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+body {
+    background: linear-gradient(to bottom right, transparent, rgb(234, 49, 179) 60%, rgb(203, 203, 243));    
+    background-size: cover;
+
+}
+.layers {
+    position: relative;
+    min-height: 640px;
+    max-width: 360px;
+    left: 30%;
+    top: 120px;
+   
+}
+.layers img {
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+    transition: all ease 1699ms;
+    transform-style: preserve-3d;
+}
+.layers .mid {
+    width: 320px;
+    left: 20px;
+}
+.layers .top {
+    width: 300px;
+    left: 30px;
+    top: -5px;
+}
+.layers .tippy {
+    width: 280px;
+    left: 40px;
+    top: -150px;
+}
+
+.layers:hover img {
+    transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) 
+    translateX(35px) translateY(0px) translateZ(180px) 
+}
+
+.layers:hover img.mid {
+    transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) 
+    translateX(35px) translateY(0px) translateZ(240px) 
+}
+.layers:hover img.top {
+    transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) 
+    translateX(35px) translateY(0px) translateZ(280px) 
+}
+.layers:hover img.tippy {
+    transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) 
+    translateX(35px) translateY(0px) translateZ(260px) 
+}
